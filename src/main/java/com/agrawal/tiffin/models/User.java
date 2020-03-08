@@ -12,7 +12,11 @@ public class User {
 	private String userName;
 	private String mobileNumber;
 	private String email;
-	private String dateOfBirth;
+	private String address;
+	private Integer quantity;
+	private String gender;
+	
+	
 	public String getUserName() {
 		return userName;
 	}
@@ -31,16 +35,29 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getDateOfBirth() {
-		return dateOfBirth;
+	public String getAddress() {
+		return address;
 	}
-	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Integer getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 	@Override
 	public String toString() {
-		return "User [userName=" + userName + ", mobileNumber=" + mobileNumber + ", email=" + email + ", dateOfBirth="
-				+ dateOfBirth + "]";
+		return "User [userName=" + userName + ", mobileNumber=" + mobileNumber + ", email=" + email + ", address="
+				+ address + ", quantity=" + quantity + ", gender=" + gender + "]";
 	}
+	
 	
 }
